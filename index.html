@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White board with delete and undo buttons</title>
+    <style>
+        canvas{
+            border: 2px solid black;
+            margin: auto;
+            background-color: white;
+            cursor: crosshair;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-color: grey;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="deleteall()" id="dlt"> Delete</button>
+        <button onclick="undolast()" id="un">Undo</button>
+    </div>
+    <canvas width="500" height="600" id="board"></canvas>
+    <script src="sample.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
